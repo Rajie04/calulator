@@ -1,0 +1,32 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #C9DEF4, #F5CCD4);
+}
+
+.calc-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(4, 100px);
+}
+
+.calc-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: #DFD5E4;
+}
+
+.calc-grid > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
